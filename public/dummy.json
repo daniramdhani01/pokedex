@@ -1,0 +1,11 @@
+[
+    {
+        "email" : "dani@mail.com",
+        "password" : "p@ssword",
+        "name" : "Dani Ramdhani",
+        "phone" : "+62811-1234-1234",
+        "gender" : "male",
+        "foto_url" : "foto_profile.png",
+        "country" : "indonesia"
+    }
+]
