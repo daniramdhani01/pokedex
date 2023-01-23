@@ -27,7 +27,6 @@ function MasterLayout() {
                     <span className='d-block'>{currentUser.name}</span>
                     <span className='d-block fs-7 text-muted'>View Profile</span>
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={()=>navigate('/your-pokemon')}>My Pokemon</Dropdown.Item>
                   <Dropdown.Divider/>
                   <Dropdown.Item onClick={logout}>Sign Out</Dropdown.Item>
                 </Dropdown.Menu>

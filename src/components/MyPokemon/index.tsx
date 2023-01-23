@@ -47,16 +47,20 @@ function MyPokemon() {
           </div>
         </div>
 
-      <div className='overflow-hidden mt-3 row'>
-        {list?.map((item:any, i:number)=> {
-            return(
-              <div className="col-md-6 mb-2 px-1" key={i}>
-                <Card className='col-12' onClick={()=>handleShow(item)} as={Button}>
-                    <Card.Body className='text-center text-muted w-100'> <span >{item.name}</span></Card.Body>
-                </Card>
-              </div>
-            )
-            })}
+      <div className='overflow-hidden mt-3 row text-center'>
+        {list.length > 0 ?
+          list?.map((item:any, i:number)=> {
+              return(
+                <div className="col-md-6 mb-2 px-1" key={i}>
+                  <Card className='col-12' onClick={()=>handleShow(item)} as={Button}>
+                      <Card.Body className='text-center text-muted w-100'> <span >{item.name}</span></Card.Body>
+                  </Card>
+                </div>
+              )
+              })
+              :
+          <span className="mb-5 text-muted">You dont have pokemon</span>
+        }
       </div>
     </>
   )
